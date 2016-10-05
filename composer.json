@@ -1,0 +1,34 @@
+{
+	"name": "gw2wiki/php-gwwbot",
+	"description": "an IRC Bot/Client for PHP7, for #gww on gamesurge",
+	"minimum-stability": "dev",
+	"license": "MIT",
+	"keywords" : [
+		"irc",
+		"gamesurge",
+		"cli",
+		"bot",
+		"client"
+	],
+	"authors": [
+		{
+			"name": "smiley",
+			"email": "smiley@chillerlan.net"
+		}
+	],
+	"require": {
+		"php": ">=7.0.3",
+		"chillerlan/gw1-database": "dev-master",
+		"chillerlan/gw2-database": "dev-master",
+		"chillerlan/php-curl": "dev-master"
+	},
+	"autoload": {
+		"files": [
+			"src/bootstrap.php"
+		],
+		"psr-4": {
+			"GW2Wiki\\GWWBotCLI\\": "cli/",
+			"GW2Wiki\\GWWBot\\": "src/"
+		}
+	}
+}
